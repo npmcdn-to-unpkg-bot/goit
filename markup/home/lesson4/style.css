@@ -28,22 +28,27 @@ body {
 }
 
 .contacts-counties {
-    margin: 10px 34px 0 0;
+    margin: 10px 15px 0 0;
     float: right;
     height: 165px;
 }
 
 .contacts {
     float: right;
-    margin: 0 0 15px 0;
+    margin: 0px 0px 10px 0;
+    width: 100%;
+    text-align: right;
+    font-size: 15px;
 }
 
 .countries {
-    height: 165px;
+    float: right;
 }
 
 .countries table tr th {
-    padding: 0 5px 0 5px;
+    padding: 0 2px 0 2px;
+    width: 65px;
+    
 }
 
 .countries table tr th a {
@@ -51,8 +56,8 @@ body {
     font-size: 12px;
 }
 
-.photo {
-    margin: 0;
+.photo {    
+    margin: 0 0 -1px 0;
 }
 
 .menu {
