@@ -24,13 +24,13 @@ body {
 
 .logo {
     float: left;
-    margin: 0 0 -2px 28px;
+    margin-left: 25px;
 }
 
 .contacts-counties {
-    margin: 10px 15px 0 0;
     float: right;
     height: 165px;
+    margin: 10px 25px 0 0;
 }
 
 .contacts {
@@ -66,11 +66,6 @@ body {
     width: 100%;
     background: #313131;
     float: left;
-}
-
-.menu1 ul {
-    width: 100%;
-    display: table;
 }
 
 .menu li {
