@@ -107,19 +107,19 @@ button[type=button] {
     width: 272px;
     height: 35px;
     background: url(img/fb.png);
-    margin: 0 7px 0 7px;
+    margin: 0 7px 20px 7px;
     border: 0;
 }
 
 form {
-    margin-top: 25px;
+    margin-top: 15px;
     text-align: center;
 }
 
 input[type=text] {
     background: black;
     border: 0;
-    margin: 15px 0 10px 0;
+    margin: 10px 0 10px 0;
     width: 276px;
     height: 35px;
     padding-left: 10px;
@@ -143,15 +143,22 @@ button[type=submit] {
     width: 149px;
     height: 35px;
     font-size: 14px;
-    margin: 30px 68.5px 30px 68.5px;
+    margin: 25px 68.5px 25px 68.5px;
     border-radius: 5px;
     border: 0;
 }
 
-.content p {
+.content p.footer {
     margin: auto;
     text-align: center;
     color: #BBBBBB;
     font-size: 11px;
     width: 309px;
+}
+
+p.uo {
+    color: #727272;
+    background: url(img/bg-p.png) no-repeat center;
+    text-align: center;
+    margin: auto;
 }
