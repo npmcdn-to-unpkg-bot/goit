@@ -171,6 +171,7 @@ nav a {
 
 .search {
     width: 909px;
+    height: 134px;
 }
 
 .search-auto {
@@ -432,4 +433,141 @@ input[type=checkbox] {
     font-weight: 300;
     position: relative;
     bottom: 4px;
+}
+
+.main {
+    margin-top: 16px;   
+    width: 910px;
+}
+
+.main-left {
+    width: 181px;
+    color: #114165;
+    float: left;
+}
+
+.main-left h3 {
+    font-size: 12.73px;
+    border: 1px solid #79878d;
+    border-radius: 10px;
+    height: 26px;
+    line-height: 26px;
+    width: 149px;
+}
+
+.main-left h3:first-child {
+    width: 183px;
+    margin-bottom: 13px;  
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.main-left h3 img {
+    vertical-align: middle;
+    width: 20px;
+    margin: -4px 3px 0 3px;
+}
+
+.main-left h3 {
+    font-size: 12.73px;
+}
+
+.main-left ul {
+    list-style-image: url(img/marker.png);
+    margin-left: 18px;
+}
+
+.main-left a {
+    font-size: 12.73px;
+    color: #465961;
+    display: block;
+    text-decoration: none;
+}
+
+.main-left a:hover {
+    font-size: 14px;
+    color: #0c3256;
+    font-style: italic;
+    font-weight: 600;
+    margin-top: -1.27px;
+}
+
+.main-left ul li {
+    margin: 8px 0 8px 0;
+}
+
+.main-left ul li:hover {
+    list-style-image: url(img/marker-hover.png);
+}
+
+.main-right {
+    width: 181px;
+    color: #114165;
+    float: left;
+}
+
+.main-right span h3 {
+    font-size: 12.73px;
+    border: 1px solid #79878d;
+    border-radius: 10px;
+    height: 26px;
+    line-height: 26px;
+    width: 149px;    
+    margin-bottom: 4px;  
+}
+
+.main-right h3 {
+    width: 180px;
+    margin-bottom: 13px;  
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+    border: 1px solid #79878d;
+    border-radius: 10px;
+    height: 26px;
+    line-height: 26px;
+}
+
+.main-right span * {
+    margin-left: 15px;;
+}
+
+.main-right h3 img {
+    vertical-align: middle;
+    width: 20px;
+    margin: -4px 3px 0 3px;
+}
+
+.main-right h3 {
+    font-size: 12.73px;
+}
+
+.main-right label {
+    font-size: 12.73px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.main-right input[type="checkbox"] {
+    width: 9px;
+    height: 9px;
+    vertical-align: middle;
+    margin: 0 15px 0 10px;
+}
+
+.main-right a {
+    display: block;
+    font-size: 11px;
+    text-decoration: none;
+    color: #ffffff;
+    background: linear-gradient(to top, #0d3458, #1f6787);
+    padding: 7px 12px 9px 13px;
+    border-radius: 15px;
+    margin-top: 8px;
+    width: 55px;
+}
+
+.main-center {
+    float: left;
+    width: 526px;
+    height: 10px;
+    margin: 0 9px 0 9px;
+    background: linear-gradient(to top, #93a7b0, #e5e7e8);    
 }
