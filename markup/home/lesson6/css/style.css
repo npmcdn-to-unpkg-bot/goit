@@ -438,6 +438,8 @@ input[type=checkbox] {
 .main {
     margin-top: 16px;   
     width: 910px;
+    height: auto;
+    overflow: hidden;
 }
 
 .main-left {
@@ -566,8 +568,80 @@ input[type=checkbox] {
 
 .main-center {
     float: left;
-    width: 526px;
+    width: 503px;
     height: 10px;
     margin: 0 9px 0 9px;
-    background: linear-gradient(to top, #93a7b0, #e5e7e8);    
+    background: linear-gradient(to top, #93a7b0, #e5e7e8);  
+    height: auto;
+    padding: 17px 0 0 23px;
+}
+
+.main-center figure {
+    text-align: center;
+    width: 138px;
+    float: left;
+    margin: 0 29px 25px 0;
+}
+
+.main-center figure figcaption {
+    color: #114165;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.main-center figure figcaption:nth-child(1) {
+    color: #206988;
+    font-size: 14.59px;    
+    font-style: normal;
+}
+
+.main-center figure figcaption:nth-child(2) {
+    color: #1f2528;
+    font-size: 12.77px;    
+    font-style: normal;
+}
+
+.commercial {
+    margin-top: 20px;
+    width: 909px;
+    text-align: center;
+}
+
+.commercial img {
+    vertical-align: top;
+    margin: 10px;
+}
+
+footer {
+    text-align: center;
+    background: #213a4d;
+    padding:  13px 0 51px 0;
+}
+
+footer a {
+    color: #bec6c9;
+    padding: 0 12px 0 12px;
+    border-right: 2px solid #bec6c9;
+    float: left;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+footer a:first-child {
+    margin-left: 270px;
+}
+
+footer a:last-of-type {
+    border-right: none;
+}
+
+footer a:hover {
+    color: #52abcb;
+}
+
+footer p {
+    margin-top: 17px;
+    color: #7f4740;
+    font-size: 10px;
 }
