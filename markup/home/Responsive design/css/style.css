@@ -106,7 +106,7 @@ article img {
 }
 
 #active {
-	margin: 24% 65px 0;
+	margin: 24% 145px 0;
     text-align: right;
     position: relative;
 }
@@ -428,11 +428,13 @@ article img {
     border-top: 1px solid #33253a;
     border-bottom: 1px solid #33253a;
     overflow: hidden;
-    height: 344px;
+    height: auto;
 }
 
 .about .inner-content {
     overflow: hidden;
+    margin-bottom: 0;
+    padding-bottom: 70px
 }
 .about article {
     width: 25%;
@@ -699,7 +701,7 @@ article img {
     width: 100%;
 }
 
-.recent span {
+.recent span:first-child {
     font-weight: 600;
 }
 
@@ -782,7 +784,9 @@ footer article p {
 }
 
 .footer-menu {
-    margin: 0 auto;    
+    margin: 0 auto;  
+    width: 60%;
+    float: left;
 }
 
 footer a {
@@ -807,6 +811,7 @@ footer ul li {
     text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.4) !important;
 }
 
+/*
 footer ul li:last-child {
     color: #ffffff;
     float: right;
@@ -819,4 +824,410 @@ footer ul li:last-child span {
     font-weight: 700;
     text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.4) !important;
     font-size: 13px;
+}
+*/
+
+
+/**/
+
+#copyright {
+    float: right;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 13px;
+}
+#copyright span {
+    color: #ffffff;
+    font-weight: 700;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.4) !important;
+    font-size: 13px;
+}
+@media screen and (max-width: 768px) {
+    html, body {
+        width: 768px;
+        height: 100%;
+    }
+    
+    header .inner-content {
+        overflow: hidden;
+        margin-bottom: 0;
+    }
+    
+    .inner-content {
+        width: 768px;
+    }
+    
+    .header-menu {
+        padding: 0;
+        margin: 30px auto;
+        float: left;
+    }
+    
+    .info {
+        width: 300px;
+        height: auto;
+    }
+    
+    .inner article img {
+        margin-right: 20px;
+    }
+        
+    .slider-full .inner-content{
+        width: 688px;
+        overflow: visible;
+    }
+    
+    #active {
+        margin: 24% 145px 0;
+    }
+    
+    #slide1:checked ~ #controls label:nth-child(2), 
+    #slide2:checked ~ #controls label:nth-child(3), 
+    #slide3:checked ~ #controls label:nth-child(4), 
+    #slide4:checked ~ #controls label:nth-child(5), 
+    #slide5:checked ~ #controls label:nth-child(1) {
+        background: url('../img/next.png') no-repeat;
+        float: right;
+        margin: 0 -35px 0 0;
+        display: block;
+    }
+
+
+    #slide1:checked ~ #controls label:nth-child(5),
+    #slide2:checked ~ #controls label:nth-child(1),
+    #slide3:checked ~ #controls label:nth-child(2),
+    #slide4:checked ~ #controls label:nth-child(3),
+    #slide5:checked ~ #controls label:nth-child(4) {
+        background: url('../img/prev.png') no-repeat;
+        float: left;
+        margin: 0 0 0 -35px;
+        display: block;
+    }
+    .about .inner-content {
+        width: 728px;
+        padding-bottom: 70px
+    }
+    
+    .about .inner-content article {
+        width: 25.3%;
+        
+    }
+    
+    .about .inner-content article h3 {
+        font-size: 20px;
+        
+    }
+    
+    .content-slider {
+        width: 336px;        
+    }
+    
+    #slider-wrapper {
+        width: 336px;
+    }
+    
+    .inner-wrapper {
+        width: 336px;
+    }
+    
+    #s1 {
+      bottom: -5px;  
+    }
+    
+    #s2 {
+      bottom: -5px;  
+    }
+    
+    #s3 {
+      bottom: -5px;  
+    }
+    
+    #s4 {
+      bottom: -5px;  
+    }
+    .slide-cont h3 span {
+        display: initial;
+    }
+    .slide-cont span {
+        text-overflow: clip;
+        overflow: hidden;
+        display: block;
+        height: 175px;
+        width: 100%;
+    }
+    
+    .recent {
+        width: 338px;
+    }    
+    
+    .recent span:last-child {
+        display: block;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+
+    }
+    
+    .content .inner-content {
+        overflow: hidden;
+        margin-bottom: 100px;
+    }
+    
+    .logos {
+        margin: 0 auto;
+        width: 728px;
+    }
+    
+    .logos img {
+        margin-right: 57px;
+        float: left;
+    }
+    
+    footer article {
+        float: left;
+        width: 204px;
+        margin: 2.2%;
+    }
+    
+    .footer-menu {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    html, body {
+        width: 480px;
+        height: 100%;
+    }
+    
+    header {
+        height: auto;
+        padding-bottom: 100px;
+    }
+    
+    .logo {
+        display: block;
+        float: none;
+        margin: 0 auto;
+    }
+    
+    .inner-content {
+        width: 480px;
+    }
+    
+    .header-menu {
+        padding: 0;
+        margin: 30px auto;
+        float: left;
+    }
+    
+    .info {
+        width: 200px;
+        height: auto;
+        padding: 110px 0 0 0;
+    }
+    
+    .info h3 {
+        font-size: 27px;
+    }
+    
+    .info span {
+        font-size: 16px;
+        display: block;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    
+    .info span:last-child {
+        display: none;
+    }
+    
+    .inner article img {
+        margin-right: 20px;
+        height: 320px;
+    }
+    
+    .slider-full {
+        height: 244px;
+    }
+    
+    .slider-full .inner-content{
+        width: 440px;
+    }
+    
+    #active {
+        margin: 17% 41% 0 0;
+    }
+    
+    #controls {
+        margin: -44% 0 0 0;
+    }
+    
+    #slides article {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    #slide1:checked ~ #controls label:nth-child(2), 
+    #slide2:checked ~ #controls label:nth-child(3), 
+    #slide3:checked ~ #controls label:nth-child(4), 
+    #slide4:checked ~ #controls label:nth-child(5), 
+    #slide5:checked ~ #controls label:nth-child(1) {
+        background: url('../img/next.png') no-repeat;
+        float: right;
+        margin: 0 -24px 0 0;
+        display: block;
+    }
+
+
+    #slide1:checked ~ #controls label:nth-child(5),
+    #slide2:checked ~ #controls label:nth-child(1),
+    #slide3:checked ~ #controls label:nth-child(2),
+    #slide4:checked ~ #controls label:nth-child(3),
+    #slide5:checked ~ #controls label:nth-child(4) {
+        background: url('../img/prev.png') no-repeat;
+        float: left;
+        margin: 0 0 0 -23px;
+        display: block;
+    }
+    
+    .about .inner-content {
+        width: 728px;
+        padding-bottom: 70px
+    }
+    
+    .about .inner-content article {
+        margin-left: 60px;
+        width: 380px;
+        
+    }
+    
+    .about .inner-content article h3 {
+        font-size: 20px;
+        
+    }
+    
+    .content-slider {
+        width: 440px;  
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+    
+    #slider-wrapper {
+        width: 440px;
+    }
+    
+    .inner-wrapper {
+        width: 440px;
+    }
+    
+    #s1 {
+      bottom: -5px;  
+    }
+    
+    #s2 {
+      bottom: -5px;  
+    }
+    
+    #s3 {
+      bottom: -5px;  
+    }
+    
+    #s4 {
+      bottom: -5px;  
+    }
+    .slide-cont h3 span {
+        display: initial;
+    }
+    .slide-cont span {
+        text-overflow: clip;
+        overflow: hidden;
+        display: block;
+        height: 175px;
+        width: 100%;
+    }
+    
+    .recent {
+        width: 338px;
+    }    
+    
+    .recent span:last-child {
+        display: block;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+
+    }
+    
+    .content .inner-content {
+        overflow: hidden;
+        margin-bottom: 30px;
+    }
+    
+    .logos {
+        margin: 0 auto;
+        width: 420px;
+    }
+    
+    .logos img {
+        margin: 7.5%;
+        float: left;
+    }
+    
+    footer {
+        height: auto;
+    }
+    
+    .footer-content {
+        overflow: hidden;
+        height: auto;
+        padding-bottom: 95px;
+    }
+    
+    .footer-content .inner-content {
+        width: 440px;
+    }
+    
+    .bottom-m .inner-content {
+        line-height: 57px;
+        margin-bottom: 0;
+    }
+    
+    footer article {
+        float: left;
+        width: 100%;
+    }
+    
+    .footer-menu {
+        float: none;
+        padding: 0;
+        width: 450px;
+        height: 57px;
+    }
+    
+    .footer-menu a {
+        margin-left: 10px;
+        font-size: 15px;
+    }
+    
+    #copyright  {
+        color: #ffffff;
+        font-family: sans-serif;
+        font-size: 13px;
+        margin-right: 38%;
+    }
+
+    #copyright  span {
+        color: #ffffff;
+        font-weight: 700;
+        text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.4) !important;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .inner-content {
+        width: 320px;
+    }
 }
