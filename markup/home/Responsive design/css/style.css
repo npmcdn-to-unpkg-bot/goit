@@ -48,6 +48,70 @@ header ul li {
     display: inline-block;
 }
 
+/******************DROPDOWN*******************/
+
+.dropdown-menu {
+    display: none;
+    background-color: rgba(63, 50, 71, 0.81) !important;
+    border-radius: 10px !important;
+}
+
+.dropdown-menu a {
+    margin-left: 0;
+    border-bottom: 2px solid rgba(63, 50, 71, 0.81);
+}
+
+.dropbtn a {
+    border-bottom: none;
+}
+
+.dropbtn {
+    color: white;
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown-menu {
+    display: inline-block;
+    top: 0 !important;  
+    margin: 135px 0 0 25% !important;
+    width: 246px !important;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    text-align: center;
+    display: none;
+    width: 246px !important;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background: #2b2231;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown-menu:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown-menu:hover .dropbtn {
+    
+}
+/**/
 /* SLIDER */
 
 .slider-full {
@@ -55,9 +119,6 @@ header ul li {
     width: 100%;
     height: 400px;
 }
-
-/**/
-
 input {
 	display: none;
 }
@@ -1005,6 +1066,11 @@ footer ul li:last-child span {
         padding-bottom: 100px;
     }
     
+    header .inner-content {
+        height: 250px;
+        overflow: visible;
+    }
+    
     .logo {
         display: block;
         float: none;
@@ -1016,9 +1082,11 @@ footer ul li:last-child span {
     }
     
     .header-menu {
-        padding: 0;
-        margin: 30px auto;
-        float: left;
+        display: none;
+    }
+    
+    .dropdown-menu {
+        display: initial !important;
     }
     
     .info {
