@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+.container-form {
+    width: 760px;
+    margin: 20px 100px 0 100px;
+    overflow: hidden;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.container-form label {
+    display: block;
+    width: 280px;
+    float: left;
+}
+
+.container-form form {
+    width: 100%;
+    float: left;
+    height: 62px;
+    margin-bottom: 10px;
+}
+
+.container-form input {
+    float: right;
+}
+
+.container-form .tips {
+    float: left;
+    width: 480px;
+    height: 62px;
+}
+
+.container-form .form-input {
+    width: 100%;
+    overflow: hidden;
+}
+
+.container-form .tip {
+    background: #ffffff;
+    box-shadow: 0px 3px 7px #4d4d4d;
+    border-radius: 2px;
+    font-size: 14px;
+    line-height: 18px;
+    width: 250px;
+    height: 18px;
+    padding: 0 10px 0 10px;
+    margin-left: 10px;
+    margin-bottom: 1px;
+    float: left;
+    display: none;
+}
+
+.container-form .active {
+    display: block !important;
+}
+
+.container-form button {
+    width: 80px;
+    height: 25px;
+    float: left;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+ul li {
+    display: inline-block;
+}
+
+.tab-content {
+    background: #e2e2e2;
+    box-shadow: 2px 2px 2px #d9d9d9;
+    padding: 15px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px
+}
+
+.tab-content .active {
+    display: block;
+}
+
+.tab-content div {
+    display: none;
+}
+
+.container-tab {
+    width: 760px;
+    margin: 20px 100px 0 100px;
+}
+
+.tab {
+    display: block;
+    padding: 10px 15px 10px 15px;
+    background: #f2f2f2;
+    box-shadow: 2px 0px 0px #d9d9d9;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px
+}
+
+.container-tab .activeTab {
+    background: #e2e2e2;
+}
