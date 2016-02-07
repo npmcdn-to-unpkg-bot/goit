@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS 9-10</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="http://code.jquery.com/color/jquery.color-2.1.2.min.js"></script>
+    <script src="js/jquery.jcarousel.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/cusel.min.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="menu">
+            <ul class="nav">
+                <li><a href="#">Nav #1</a></li>
+                <li><a href="#">Nav #2</a></li>
+                <li class="arrow-down"><a href="#">Nav #3</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Nav #3.1</a></li>
+                        <li><a href="#">Nav #3.2</a></li>
+                        <li><a href="#">Nav #3.3</a></li>
+                        <li class="arrow-right"><a href="#">Nav #3.4</a>
+                            <ul class="dropdown ddown-more">
+                                <li><a href="#">Nav #3.4.1</a></li>
+                                <li><a href="#">Nav #3.4.2</a></li>
+                                <li><a href="#">Nav #3.4.3</a></li>
+                                <li><a href="#">Nav #3.4.4</a></li>
+                                <li><a href="#">Nav #3.4.5</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Nav #3.5</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Nav #4</a></li>
+                <li><a href="#">Nav #5</a></li>
+            </ul>
+        </div>
+        <div>
+            <div class="jcarousel-wrapper">
+                <div class="jcarousel">
+                    <ul>
+                        <li><img src="img/img-flower.jpg" width="600" height="400" alt=""></li>
+                        <li><img src="img/img-flower.jpg" width="600" height="400" alt=""></li>
+                        <li><img src="img/img-flower.jpg" width="600" height="400" alt=""></li>
+                        <li><img src="img/img-flower.jpg" width="600" height="400" alt=""></li>
+                        <li><img src="img/img-flower.jpg" width="600" height="400" alt=""></li>
+                        <li><img src="img/img-flower.jpg" width="600" height="400" alt=""></li>
+                    </ul>
+                </div>
+                <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+                <p class="jcarousel-pagination"></p>
+            </div>
+        </div>
+        <div class="select-js">
+            <h3>Custom select:</h3>
+            <select>
+                <option value="1">Some item #1</option>
+                <option value="2">Some item #2</option>
+                <option value="3">Some item #3</option>
+                <option value="4">Some item #4</option>
+            </select>
+        </div>
+        <div>
+            <div class="check-js">
+                <h3>Custom checkbox (js):</h3>
+                <label for=""><span class="jscheck" checked><input type="checkbox" name="ch1" /></span>Item #1</label>
+                <br>
+                <label for=""><span class="jscheck"><input type="checkbox" name="ch1" checked /></span>Item #2</label>
+                <br>
+                <label for=""><span class="jscheck"><input type="checkbox" name="ch1" checked disabled /></span>Item #3</label>
+            </div>
+            <div class="check-css">
+                <h3>Custom checkbox (css):</h3>
+                <input type="checkbox" id="check1" />
+                <label for="check1">Item #1</label>
+                <br>
+                <input type="checkbox" id="check2" checked />
+                <label for="check2">Item #2</label>
+                <br>
+                <input type="checkbox" id="check3" checked disabled />
+                <label for="check3">Item #3</label>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

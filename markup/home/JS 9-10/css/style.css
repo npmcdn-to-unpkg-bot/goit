@@ -1,0 +1,268 @@
+body {
+    background: #555;
+    font-family: sans-serif;
+}
+
+main {
+    width: 620px;
+    margin: 0 auto;
+    height: 100%;
+    background: white;
+    padding: 10px;
+    box-shadow: 2px 2px 5px #000;
+}
+
+h3 {
+    color: white;
+    padding: 10px;
+    background: #2c3e50;
+}
+
+main>div {
+    margin-bottom: 30px;
+}
+
+
+/*         JCarousel        */
+
+.jcarousel-wrapper {
+    margin: 20px auto;
+    position: relative;
+    border: 10px solid #fff;
+    width: 600px;
+    height: 400px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 0 2px #999;
+    -moz-box-shadow: 0 0 2px #999;
+    box-shadow: 0 0 2px #999;
+}
+
+.jcarousel-wrapper .photo-credits {
+    position: absolute;
+    right: 15px;
+    bottom: 0;
+    font-size: 13px;
+    color: #fff;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.85);
+    opacity: .66;
+}
+
+.jcarousel-wrapper .photo-credits a {
+    color: #fff;
+}
+
+
+/** Carousel **/
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel li {
+    float: left;
+}
+
+
+/** Carousel Controls **/
+
+.jcarousel-control-prev,
+.jcarousel-control-next {
+    position: absolute;
+    top: 200px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #b9b0a9;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 1px #000;
+    font: 24px/27px Arial, sans-serif;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0 0 2px #999;
+    -moz-box-shadow: 0 0 2px #999;
+    box-shadow: 0 0 2px #999;
+}
+
+.jcarousel-control-prev {
+    left: -70px;
+}
+
+.jcarousel-control-next {
+    right: -70px;
+}
+
+.jcarousel-control-prev:hover span,
+.jcarousel-control-next:hover span {
+    display: block;
+}
+
+.jcarousel-control-prev.inactive,
+.jcarousel-control-next.inactive {
+    opacity: .5;
+    cursor: default;
+}
+
+
+/** Carousel Pagination **/
+
+.jcarousel-pagination {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+}
+
+.jcarousel-pagination a {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 11px;
+    line-height: 14px;
+    min-width: 14px;
+    background: #fff;
+    color: #4E443C;
+    border-radius: 14px;
+    padding: 3px;
+    text-align: center;
+    margin-right: 2px;
+    opacity: .75;
+}
+
+.jcarousel-pagination a.active {
+    background: #4E443C;
+    color: #fff;
+    opacity: 1;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75);
+}
+
+
+/*              CHEKBOX JS           */
+
+.jscheck {
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    cursor: pointer;
+    background: url(../img/checkbox.png);
+    position: relative;
+    top: 3px;
+}
+
+.jscheck input {
+    display: none;
+}
+
+.checkDisabled {
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    cursor: pointer;
+    background-image: url(../img/checkbox-disabled.png);
+    position: relative;
+    top: 3px;
+}
+
+.checkDisabled input {
+    display: none;
+}
+
+
+/*              CHEKBOX CSS           */
+
+.check-css input[type="checkbox"] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+.check-css label {
+    cursor: pointer;
+}
+
+.check-css input[type="checkbox"] + label::before {
+    content: "";
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url(../img/checkbox.png);
+    position: relative;
+    top: 3px;
+}
+
+.check-css input[type="checkbox"]:checked + label::before {
+    background-position: 0 -17px;
+}
+
+.check-css input[type="checkbox"]:disabled + label::before {
+    background: url(../img/checkbox-disabled.png);
+}
+
+.check-css input[type="checkbox"]:disabled:checked + label::before {
+    background: url(../img/checkbox-disabled.png);
+    background-position: 0 -17px;
+}
+
+
+/*           MENU          */
+
+.nav {
+    padding: 0;
+    background: #2c3e50;
+}
+
+.nav li {
+    display: table-cell;
+    line-height: 40px;
+    text-align: center;
+    padding-right: 10px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100px;
+}
+
+.dropdown a {
+    width: 120px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    z-index: 999;
+    padding: 0;
+    background: #2c3e50;
+}
+
+.dropdown li {
+    display: block;
+}
+
+.ddown-more {
+    margin-left: 130px;
+    margin-top: -40px;
+}
+
+.arrow-down > a {
+    background-image: url(../img/arrow-down.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+.arrow-right > a {
+    background-image: url(../img/arrow-right.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+}
