@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS 11-12</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="js/jquery.lcarousel.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="lcarousel">
+            <button class="carousel-arrow-left">Влево</button>
+            <div class="carousel-hider">
+                <ul class="carousel-list">
+                    <li class="carousel-element"><img src="img/slide_1.jpg" alt=""></li>
+                    <li class="carousel-element"><img src="img/slide_2.jpg" alt=""></li>
+                    <li class="carousel-element"><img src="img/slide_3.jpg" alt=""></li>
+                    <li class="carousel-element"><img src="img/slide_4.jpg" alt=""></li>
+                    <li class="carousel-element"><img src="img/slide_5.jpg" alt=""></li>
+                    <li class="carousel-element"><img src="img/slide_6.jpg" alt=""></li>
+                    <li class="carousel-element"><img src="img/slide_7.jpg" alt=""></li>
+                </ul>
+            </div>
+            <button class="carousel-arrow-right">Вправо</button>
+        </div>
+        <div id="results">
+        </div>
+        <script type="text/html" id="item_tmpl">
+            <div class="main">
+                <div class="name">
+                    <h3><p class="center"><%=members[0].name%></p></h3>
+                    <img src="<%=members[0].portrait%>" alt="Portrait">
+                    <p class="center">
+                        <%=members[0].activity%>
+                    </p>
+                </div>
+                <hr />
+                <div class="why">
+                    <p>Хочу учить Frontend, потому что:</p>
+                    <%=members[0].why%>
+                </div>
+                <hr />
+                <div class="contacts">
+                    <p>Телефон:
+                        <%=members[0].phone%>
+                    </p>
+                    <p>GitHub:
+                        <a href="<%=members[0].github%>">
+                            <%=members[0].github%>
+                        </a>
+                    </p>
+                    <p>VK:
+                        <a href="<%=members[0].vk%>">
+                            <%=members[0].vk%>
+                        </a>
+                    </p>
+                </div>
+                <hr />
+                <div class="feedback">
+                    <p>Feedback:</p>
+                    <p>
+                        <%=members[0].feedback%>.</p>
+                </div>
+            </div>
+        </script>
+    </main>
+</body>
+
+</html>
