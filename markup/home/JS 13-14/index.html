@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS 13-14</title>
+    <link rel="stylesheet" href="css/sryle.css">
+    <script src="js/jr-tmpl.js"></script>
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+</head>
+
+<body>
+    <script type="text/html" id="item_tmpl">
+        <% for ( var i = 0; i < qns.length; i++ ) { %>
+            <h3>Q#<%=i+1%> <%=qns[i]["qn"]%></h3>
+            <div>
+                <% for ( var j = 0; j < qns[i]["answ"].length; j++ ) { %>
+                    <label>
+                        <input type="checkbox" value="<%=j+1%>">
+                        <%=qns[i]["answ"][j]%>
+                    </label>
+                    <% } %>
+            </div>
+            <% } %>
+    </script>
+    <div class="overlay"></div>
+    <div class="modal-window">
+    <h2>РЕЗУЛЬТАТ</h2>
+    <p>sdgsdg</p>
+    <button>Еще раз!</button>
+    </div>
+    <div class="container">
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
