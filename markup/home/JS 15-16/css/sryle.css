@@ -1,0 +1,205 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    height: 100%;
+    font-family: sans-serif;
+}
+
+header {
+    padding: 15px 0 0 0;
+    overflow: hidden;
+    font-size: 13px;
+    min-width: 960px;
+}
+
+header ul {
+    float: right;
+    list-style: none;
+    margin-right: 20px;
+}
+
+header ul li {
+    float: left;
+    line-height: 32px;
+    margin-right: 10px;
+    margin-left: 5px;
+    opacity: 0.65;
+}
+
+header ul li:hover {
+    opacity: 1;
+}
+
+header ul li:hover span {
+    opacity: 0.65;
+}
+
+header ul li span {
+    color: rgb(108, 108, 108);
+}
+
+header ul li a {
+    display: block;
+    text-decoration: none;
+    color: #000000;
+}
+
+li.apps a {
+    margin: 9px 5px 9px 5px;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-image: url(../img/sprite.png);
+    background-position: -139px -45px;
+}
+
+li.notification a {
+    margin: 7px 5px 9px 5px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-image: url(../img/sprite.png);
+    background-position: -194px -21px;
+    border-radius: 50%;
+}
+
+li.portrait {
+    opacity: 1;
+}
+
+li.portrait a {
+    margin-top: 2px;
+    margin-bottom: 9px;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-color: #737373;
+    background-repeat: no-repeat;
+    background-image: url(../img/portrait.jpg);
+    border-radius: 50%;
+}
+
+section {
+    width: 960px;
+    height: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 140px;
+    overflow: hidden;
+    min-width: 960px;
+}
+
+section .g-logo {}
+
+
+/* 584 38 */
+
+.search {
+    width: 584px;
+    height: 38px;
+    margin: 25px auto;
+    border: 1px solid #d9d9d9;
+}
+
+.search:hover {
+    border: 1px solid #b9b9b9;
+}
+
+input[type="text"] {
+    width: 498px;
+    height: 26px;
+    border: none;
+    float: left;
+    margin: 6px 0 0 10px;
+    font-size: 16px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+.keyboard a {
+    background-image: url(../img/keyboard.gif);
+    background-repeat: no-repeat;
+    width: 19px;
+    height: 11px;
+    float: left;
+    opacity: 0.65;
+    margin: 15px 0 0 10px;
+    display: block;
+}
+
+.keyboard a:hover {
+    opacity: 1;
+}
+
+.microphone a {
+    margin: 8px 0 0 10px;
+    background-image: url(../img/microphone.png);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    float: left;
+    background-size: 24px 24px;
+    display: block;
+}
+
+.enter,
+.lucky {
+    background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
+    padding: 10px 15px 10px 15px;
+    font-weight: 600;
+    opacity: 0.75;
+    margin: 2px;
+    border: 1px solid #f2f2f2;
+    border-radius: 2px;
+}
+
+.enter:hover,
+.lucky:hover {
+    opacity: 1;
+    border: 1px solid #c6c6c6;
+}
+
+footer {
+    background: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    height: 41px;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    min-width: 960px;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 10px 0 10px;
+}
+
+footer ul li a {
+    line-height: 41px;
+    color: #666;
+    font-size: 16px;
+}
+
+.footer-left {
+    float: left;
+}
+
+.footer-right {
+    float: right;
+}
