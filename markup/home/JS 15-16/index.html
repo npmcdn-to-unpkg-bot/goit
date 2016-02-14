@@ -4,46 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <title>JS 15-16</title>
-    <link rel="stylesheet" href="css/sryle.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
 </head>
 
 <body>
-
-    <header>
-        <ul>
-            <li><span>User name</span></li>
-            <li><a href="#">Почта</a></li>
-            <li><a href="#">Картинки</a></li>
-            <li class="apps">
-                <a href="#"> </a>
-            </li>
-            <li class="notification">
-                <a href="#"></a>
-            </li>
-            <li class="portrait">
-                <a href="#"></a>
-            </li>
-        </ul>
-    </header>
-    <section>
-        <a href="http://google.com" target="_blank"><img class="g-logo" src="img/google-logo.png" alt="google logo"></a>
-        <div class="search">
-            <input type="text">
-            <div class="keyboard">
-                <a href="#"></a>
+    <div class="wrapper">
+        <header>
+            <ul>
+                <li><span>User name</span></li>
+                <li class="hide"><a href="#">Почта</a></li>
+                <li class="hide"><a href="#">Картинки</a></li>
+                <li class="apps">
+                    <a href="#"> </a>
+                </li>
+                <li class="notification">
+                    <a href="#"></a>
+                </li>
+                <li class="portrait">
+                    <a href="#"></a>
+                </li>
+            </ul>
+        </header>
+        <section>
+            <div class="main hide">
+                <a href="http://google.com" target="_blank"><img class="g-logo" src="img/google-logo.png" alt="google logo"></a>
+                <div class="search">
+                    <input type="text">
+                    <div class="keyboard">
+                        <a href="#"></a>
+                    </div>
+                    <div class="microphone">
+                        <a href="#"></a>
+                    </div>
+                    <button class="submit"></button>
+                </div>
+                <div class="buttons">
+                    <button class="enter">Поиск в Google</button>
+                    <button class="lucky">Мне повезёт!</button>
+                </div>
             </div>
-            <div class="microphone">
-                <a href="#"></a>
-            </div>
-        </div>
-        <div class="buttons">
-            <button class="enter">Поиск в Google</button>
-            <button class="lucky">Мне повезёт!</button>
-        </div>
-    </section>
+            <div class="results"></div>
+        </section>
+        <div class="push"></div>
+    </div>
     <footer>
-
         <ul class="footer-left">
             <li><a href="#">Реклама</a></li>
             <li><a href="#">Для бизнеса</a></li>
@@ -55,6 +60,7 @@
             <li><a href="#">Настройки</a></li>
         </ul>
     </footer>
+
     <script src="js/script.js"></script>
 </body>
 
