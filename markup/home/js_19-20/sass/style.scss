@@ -436,6 +436,7 @@ header {
 }
 
 dt.active-tab:before {
+    content: '-';
     background: #f4b60d !important;
     color: #fff !important;
 }
