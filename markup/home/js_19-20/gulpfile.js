@@ -8,13 +8,13 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./css'));
 });
 
-gulp.task('scripts', function () {
-    return gulp.src('js/*.js')
-        .pipe(concat('bundle.js'))
-        .pipe(gulp.dest('js-out/'));
-});
+//gulp.task('scripts', function () {
+//    return gulp.src('js/*.js')
+//        .pipe(concat('bundle.js'))
+//        .pipe(gulp.dest('js-out/'));
+//});
 
 gulp.task('watch', function () {
     gulp.watch('./sass/**/*.scss', ['sass']);
-    gulp.watch('js/*.js', ['scripts']);
+//    gulp.watch('js/*.js', ['scripts']);
 });
