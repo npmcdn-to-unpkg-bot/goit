@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS 23-24</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="js/jr-tmpl.js" charset="utf-8"></script>
+    <script src="js/script.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <section>
+    </section>
+
+    <script type="text/html" id="tmpl">
+        <div class="todo">
+            <input class="item-value" type="text">
+            <button class="item-add">+</button>
+            <ul class="list">         
+            </ul>
+        </div>
+    </script>
+
+    <script type="text/html" id="list-item">
+        <% for (var i = 0; i < data.length; i++) { %>       
+            <li><div class="note"><%= data[i] %></div><span data-value="<%= data[i] %>" class="del-item">×</span></li>
+        <% }; %>
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #d6d6d6;
+}
+section {
+    padding: 5px;
+    width: 480px;
+    margin: 5px auto;
+}
+.item-value {
+    width: 417px;
+    height: 30px;
+    padding: 5px;
+    font-size: 18px;
+}
+button {
+    height: 44px;    
+    width: 44px;    
+}
+ul {
+    margin-top: 5px;
+}
+li {
+    font-family: sans-serif;
+    list-style: none;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+li .note {
+    width: 415px;
+    background: #fff; 
+    padding: 10px;
+    font-size: 18px;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+li span{ 
+    float: right;
+    cursor: pointer;
+    font-size: 28px;
+    line-height: 40px;
+    margin-right: 15px;
+}
