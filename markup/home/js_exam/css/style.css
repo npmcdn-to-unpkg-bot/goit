@@ -1,0 +1,111 @@
+@font-face {
+  font-family: Roboto-Light;
+  src: url(../fonts/Roboto-Light.ttf); }
+
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-Regular.ttf); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+.inner {
+  margin: 0 auto;
+  width: 940px; }
+
+header {
+  background: url(../img/header-bg.png);
+  height: 700px;
+  width: 100%; }
+  header .header__logo {
+    float: left;
+    padding-top: 50px; }
+    header .header__logo span {
+      font-family: Montserrat, sans-serif;
+      font-weight: 600;
+      color: #ffffff;
+      font-size: 20px; }
+  header .header__login {
+    float: right;
+    padding-top: 50px; }
+    header .header__login a {
+      color: #fff;
+      text-decoration: none;
+      font-family: Montserrat, sans-serif;
+      font-weight: 600;
+      display: inline-block;
+      width: 90px;
+      height: 36px;
+      line-height: 36px;
+      text-align: center; }
+      header .header__login a:last-of-type {
+        border: 2px solid #fff;
+        border-radius: 15px; }
+  header .header__promo {
+    clear: both;
+    width: 478px;
+    font-size: 25px;
+    color: #ffffff;
+    padding-top: 153px;
+    margin: 0 auto;
+    text-align: center; }
+    header .header__promo h1 {
+      text-transform: uppercase;
+      font-family: Montserrat, sans-serif; }
+    header .header__promo p {
+      margin-top: 20px;
+      color: #ffffff;
+      font-family: Roboto-Light, sans-serif; }
+    header .header__promo a {
+      margin-top: 35px;
+      margin-left: 126.5px;
+      display: block;
+      width: 225px;
+      height: 40px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 14px;
+      background-color: #ff4e50;
+      font-family: Montserrat;
+      line-height: 40px;
+      border-radius: 15px; }
+
+main .main__how {
+  padding-top: 100px;
+  text-align: center; }
+  main .main__how h3 {
+    font-family: Montserrat;
+    font-size: 22px;
+    margin-bottom: 40px; }
+
+main .bx-wrapper {
+  max-width: 300px !important;
+  margin: 0;
+  float: left;
+  border: none;
+  margin-right: 20px; }
+  main .bx-wrapper:last-child {
+    margin-right: 0; }
+  main .bx-wrapper .bx-viewport {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: none !important; }
+  main .bx-wrapper .bx-prev {
+    background-image: url(../img/prev.png) !important;
+    height: 55px !important;
+    display: block;
+    left: 0;
+    background-position: bottom;
+    background-repeat: no-repeat; }
+  main .bx-wrapper .bx-next {
+    background-image: url(../img/next.png) !important;
+    height: 55px !important;
+    display: block;
+    background-position: bottom;
+    background-repeat: no-repeat; }
+    main .bx-wrapper .bx-next:hover {
+      background-position: 0 0; }
+  main .bx-wrapper .bx-pager {
+    display: none; }
