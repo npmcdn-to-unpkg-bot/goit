@@ -71,10 +71,11 @@ header {
       line-height: 40px;
       border-radius: 15px; }
 
-main .main__how {
+main .main__how, main .main__partner {
+  clear: both;
   padding-top: 100px;
   text-align: center; }
-  main .main__how h3 {
+  main .main__how h3, main .main__partner h3 {
     font-family: Montserrat;
     font-size: 22px;
     margin-bottom: 40px; }
@@ -85,7 +86,7 @@ main .bx-wrapper {
   float: left;
   border: none;
   margin-right: 20px; }
-  main .bx-wrapper:last-child {
+  main .bx-wrapper:nth-child(4) {
     margin-right: 0; }
   main .bx-wrapper .bx-viewport {
     -moz-box-shadow: none !important;
@@ -109,6 +110,21 @@ main .bx-wrapper {
       background-position: 0 0; }
   main .bx-wrapper .bx-pager {
     display: none; }
+
+main .main__partner figure {
+  float: left;
+  width: 220px;
+  margin-right: 20px; }
+  main .main__partner figure:last-child {
+    margin-right: 0; }
+  main .main__partner figure figcaption h5 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Montserrat; }
+  main .main__partner figure figcaption span {
+    font-family: Roboto-Light;
+    color: #666666;
+    font-size: 14px; }
 
 .slide .slide__content {
   bottom: 0;
