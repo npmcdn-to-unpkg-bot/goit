@@ -71,11 +71,15 @@ header {
       line-height: 40px;
       border-radius: 15px; }
 
-main .main__how, main .main__partner {
+main .main__how,
+main .main__partner,
+main .main__discover {
   clear: both;
   padding-top: 100px;
   text-align: center; }
-  main .main__how h3, main .main__partner h3 {
+  main .main__how h3,
+  main .main__partner h3,
+  main .main__discover h3 {
     font-family: Montserrat;
     font-size: 22px;
     margin-bottom: 40px; }
@@ -111,26 +115,59 @@ main .bx-wrapper {
   main .bx-wrapper .bx-pager {
     display: none; }
 
-main .main__partner figure {
-  float: left;
-  width: 220px;
-  margin-right: 20px; }
-  main .main__partner figure:last-child {
-    margin-right: 0; }
-  main .main__partner figure figcaption h5 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-family: Montserrat; }
-  main .main__partner figure figcaption span {
-    font-family: Roboto-Light;
-    color: #666666;
-    font-size: 14px; }
+main .main__partner .main__partner-content {
+  overflow: hidden; }
+  main .main__partner .main__partner-content figure {
+    float: left;
+    width: 220px;
+    margin-right: 20px; }
+    main .main__partner .main__partner-content figure:last-child {
+      margin-right: 0; }
+    main .main__partner .main__partner-content figure figcaption h5 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      font-family: Montserrat; }
+      main .main__partner .main__partner-content figure figcaption h5:after {
+        content: '';
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin-top: -65px;
+        margin-left: 135px;
+        position: absolute; }
+    main .main__partner .main__partner-content figure figcaption span {
+      font-family: Roboto-Light;
+      color: #666666;
+      font-size: 14px; }
+    main .main__partner .main__partner-content figure:nth-child(1) h5:after {
+      background: url(../img/icon-1.png); }
+    main .main__partner .main__partner-content figure:nth-child(2) h5:after {
+      background: url(../img/icon-2.png); }
+    main .main__partner .main__partner-content figure:nth-child(3) h5:after {
+      background: url(../img/icon-3.png); }
+    main .main__partner .main__partner-content figure:nth-child(4) h5:after {
+      background: url(../img/icon-4.png); }
+
+main .main__partner .main__partner-other {
+  margin: 40px auto 0;
+  clear: both;
+  color: #ff4e50;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px solid #ff4e50;
+  display: block;
+  width: 192px;
+  height: 40px;
+  border-radius: 15px;
+  line-height: 40px; }
 
 .slide .slide__content {
   bottom: 0;
+  left: 0;
   position: absolute;
   color: #fff;
-  color: #ffffff;
   padding: 15px; }
   .slide .slide__content .slide__content-step {
     text-align: center;
@@ -147,6 +184,7 @@ main .main__partner figure {
     margin-bottom: 10px; }
   .slide .slide__content .slide__content-title {
     font-family: Montserrat;
+    text-align: left;
     font-size: 24px;
     line-height: 26px;
     margin-bottom: 10px; }
@@ -155,3 +193,22 @@ main .main__partner figure {
     font-family: Roboto-Light;
     font-size: 14px;
     line-height: 10px !important; }
+
+.main__dicsover-masonry .grid-item {
+  width: 300px;
+  height: 310px;
+  overflow: hidden;
+  margin-left: 10px;
+  margin-bottom: 10px; }
+  .main__dicsover-masonry .grid-item img {
+    width: auto;
+    height: 310px; }
+  .main__dicsover-masonry .grid-item figcaption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -13px 0 0 -29px; }
+    .main__dicsover-masonry .grid-item figcaption span {
+      color: #ffffff;
+      font-family: Montserrat;
+      font-size: 22px; }

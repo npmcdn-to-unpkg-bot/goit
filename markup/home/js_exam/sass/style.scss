@@ -86,7 +86,9 @@ header {
 }
 
 main {
-    .main__how, .main__partner {
+    .main__how,
+    .main__partner,
+    .main__discover {
         clear: both;
         padding-top: 100px;
         text-align: center;
@@ -136,25 +138,64 @@ main {
         }
     }
     .main__partner {
-        figure {
-            float: left;
-            width: 220px;
-            margin-right: 20px;
-            &:last-child {
-                margin-right: 0;
-            }
-            figcaption {
-                h5 {
-                    margin-top: 10px;
-                    margin-bottom: 10px;
-                    font-family: Montserrat;
+        .main__partner-content {
+            overflow: hidden;
+            figure {
+                float: left;
+                width: 220px;
+                margin-right: 20px;
+                &:last-child {
+                    margin-right: 0;
                 }
-                span {
-                    font-family: Roboto-Light;
-                    color: #666666;
-                    font-size: 14px;
+                figcaption {
+                    h5 {
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        font-family: Montserrat;
+                        &:after {
+                            content: '';
+                            display: block;
+                            width: 40px;
+                            height: 40px;
+                            margin-top: -65px;
+                            margin-left: 135px;
+                            position: absolute;
+                        }
+                    }
+                    span {
+                        font-family: Roboto-Light;
+                        color: #666666;
+                        font-size: 14px;
+                    }
+                }
+                &:nth-child(1) h5:after {
+                    background: url(../img/icon-1.png);
+                }
+                &:nth-child(2) h5:after {
+                    background: url(../img/icon-2.png);
+                }
+                &:nth-child(3) h5:after {
+                    background: url(../img/icon-3.png);
+                }
+                &:nth-child(4) h5:after {
+                    background: url(../img/icon-4.png);
                 }
             }
+        }
+        .main__partner-other {
+            margin: 40px auto 0;
+            clear: both;
+            color: #ff4e50;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            border: 2px solid #ff4e50;
+            display: block;
+            width: 192px;
+            height: 40px;
+            border-radius: 15px;
+            line-height: 40px;
         }
     }
 }
@@ -162,9 +203,9 @@ main {
 .slide {
     .slide__content {
         bottom: 0;
+        left: 0;
         position: absolute;
         color: #fff;
-        color: #ffffff;
         padding: 15px;
         .slide__content-step {
             text-align: center;
@@ -182,6 +223,7 @@ main {
         }
         .slide__content-title {
             font-family: Montserrat;
+            text-align: left;
             font-size: 24px;
             line-height: 26px;
             margin-bottom: 10px;
@@ -191,6 +233,31 @@ main {
             font-family: Roboto-Light;
             font-size: 14px;
             line-height: 10px !important;
+        }
+    }
+}
+
+.main__dicsover-masonry {
+    .grid-item {
+        width: 300px;
+        height: 310px;
+        overflow: hidden;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        img {
+            width: auto;
+            height: 310px;
+        }
+        figcaption {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -13px 0 0 -29px;
+            span {
+                color: #ffffff;
+                font-family: Montserrat;
+                font-size: 22px;
+            }
         }
     }
 }
