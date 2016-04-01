@@ -73,13 +73,15 @@ header {
 
 main .main__how,
 main .main__partner,
-main .main__discover {
+main .main__discover,
+main .main__search {
   clear: both;
   padding-top: 100px;
   text-align: center; }
   main .main__how h3,
   main .main__partner h3,
-  main .main__discover h3 {
+  main .main__discover h3,
+  main .main__search h3 {
     font-family: Montserrat;
     font-size: 22px;
     margin-bottom: 40px; }
@@ -163,6 +165,29 @@ main .main__partner .main__partner-other {
   border-radius: 15px;
   line-height: 40px; }
 
+main .main__search span {
+  font-family: Roboto-Light;
+  display: block;
+  margin-bottom: 40px; }
+
+main .main__search input {
+  height: 40px;
+  width: 220px;
+  padding: 0 10px 0 10px;
+  margin-right: 10px; }
+
+main .main__search .main__search-button {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  width: 160px;
+  height: 40px;
+  background: #ff4e50;
+  line-height: 40px;
+  font-family: Montserrat;
+  font-size: 14px;
+  border-radius: 25px; }
+
 .slide .slide__content {
   bottom: 0;
   left: 0;
@@ -210,5 +235,9 @@ main .main__partner .main__partner-other {
     margin: -13px 0 0 -29px; }
     .main__dicsover-masonry .grid-item figcaption span {
       color: #ffffff;
-      font-family: Montserrat;
+      font-family: Roboto-Light;
       font-size: 22px; }
+
+footer {
+  margin-top: 100px;
+  border-top: 4px solid #ff4e50; }

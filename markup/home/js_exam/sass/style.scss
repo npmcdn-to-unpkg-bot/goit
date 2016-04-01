@@ -88,7 +88,8 @@ header {
 main {
     .main__how,
     .main__partner,
-    .main__discover {
+    .main__discover,
+    .main__search {
         clear: both;
         padding-top: 100px;
         text-align: center;
@@ -198,6 +199,31 @@ main {
             line-height: 40px;
         }
     }
+    .main__search {
+        span {
+            font-family: Roboto-Light;
+            display: block;
+            margin-bottom: 40px;
+        }
+        input {
+            height: 40px;
+            width: 220px;
+            padding: 0 10px 0 10px;
+            margin-right: 10px;
+        }
+        .main__search-button {
+            display: inline-block;
+            color: #fff;
+            text-decoration: none;
+            width: 160px;
+            height: 40px;
+            background: #ff4e50;
+            line-height: 40px;
+            font-family: Montserrat;
+            font-size: 14px;
+            border-radius: 25px;
+        }
+    }
 }
 
 .slide {
@@ -255,9 +281,14 @@ main {
             margin: -13px 0 0 -29px;
             span {
                 color: #ffffff;
-                font-family: Montserrat;
+                font-family: Roboto-Light;
                 font-size: 22px;
             }
         }
     }
+}
+
+footer {
+    margin-top: 100px;
+    border-top: 4px solid #ff4e50;
 }
