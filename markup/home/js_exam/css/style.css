@@ -12,7 +12,8 @@
 
 .inner {
   margin: 0 auto;
-  width: 940px; }
+  width: 940px;
+  overflow: hidden; }
 
 header {
   background: url(../img/header-bg.png);
@@ -239,5 +240,46 @@ main .main__search .main__search-button {
       font-size: 22px; }
 
 footer {
+  overflow: hidden;
   margin-top: 100px;
-  border-top: 4px solid #ff4e50; }
+  border-top: 4px solid #ff4e50;
+  padding-top: 40px; }
+  footer a {
+    text-decoration: none; }
+  footer .footer__logo {
+    width: 220px;
+    float: left; }
+    footer .footer__logo h3 {
+      color: #ff4e50;
+      font-size: 16px;
+      font-family: Montserrat; }
+  footer .footer__company {
+    width: 150px;
+    float: left; }
+    footer .footer__company h4 {
+      font-family: Montserrat;
+      font-size: 14px;
+      margin-bottom: 15px; }
+    footer .footer__company ul li {
+      list-style: none; }
+      footer .footer__company ul li a {
+        color: #666666;
+        font-family: Roboto-Light;
+        font-size: 14px;
+        display: block;
+        width: 70px;
+        height: 30px; }
+  footer .footer__partners {
+    float: left; }
+    footer .footer__partners h4 {
+      font-family: Montserrat;
+      font-size: 14px; }
+  footer .footer__designedby {
+    float: right; }
+    footer .footer__designedby span {
+      display: block;
+      text-transform: uppercase;
+      color: #cccccc;
+      font-size: 10px;
+      font-family: Roboto-Light;
+      letter-spacing: 5px; }

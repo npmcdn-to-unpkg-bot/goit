@@ -16,6 +16,7 @@
 .inner {
     margin: 0 auto;
     width: 940px;
+    overflow: hidden;
 }
 
 header {
@@ -289,6 +290,59 @@ main {
 }
 
 footer {
+    overflow: hidden;
     margin-top: 100px;
     border-top: 4px solid #ff4e50;
+    padding-top: 40px;
+    a {
+        text-decoration: none;
+    }
+    .footer__logo {
+        width: 220px;
+        float: left;
+        h3 {
+            color: #ff4e50;
+            font-size: 16px;
+            font-family: Montserrat;
+        }
+    }
+    .footer__company {
+        width: 150px;
+        float: left;
+        h4 {
+            font-family: Montserrat;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        ul li {
+            list-style: none;
+            a {
+                color: #666666;
+                font-family: Roboto-Light;
+                font-size: 14px;
+                display: block;
+                width: 70px;
+                height: 30px;
+            }
+        }
+    }
+    .footer__partners {
+        float: left;
+        h4 {
+            font-family: Montserrat;
+            font-size: 14px;
+        }
+    }
+    .footer__designedby {
+        float: right;
+        span {
+            display: block;
+            text-transform: uppercase;
+            color: #cccccc;
+            font-size: 10px;
+            font-family: Roboto-Light;
+            letter-spacing: 5px;
+        }
+        img {}
+    }
 }
